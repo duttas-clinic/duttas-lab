@@ -3,259 +3,777 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dutta's Clinical Laboratory - 50 Years of Diagnostic Excellence in Rupnarayanpur. 100% Robotic Infrastructure.">
+    <title>Dutta's Clinical Laboratory | Premium Diagnostic Center</title>
     
-    <!-- SEO META TAGS -->
-    <meta name="google-site-verification" content="-7L10ZEz50HhxDdzaa7gVB6aHrv9NBUxS0_mTOfR0pA" />
-    <title>Dutta's Clinical Laboratory Rupnarayanpur | Best Pathology Lab Since 1976</title>
-    <meta name="description" content="Est. 1976. Govt. of WB approved pathology lab in Rupnarayanpur. 100% robotic infrastructure (240 tests/hr). 95% painless blood tests. Open 365 days (7 AM - 4 PM). Walk-ins welcome.">
-    <meta name="keywords" content="pathology lab Rupnarayanpur, blood test Dabore More, Dutta's Clinical Laboratory, diagnostic lab West Bengal, full body checkup Rupnarayanpur">
-    <meta name="robots" content="index, follow">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- IMPORTANT: Replace duttas-clinic with your actual GitHub username -->
-    <link rel="canonical" href="https://duttas-clinic.github.io/duttas-lab/">
-
-    <!-- AI & SEARCH ENGINE STRUCTURED DATA (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "DiagnosticLab",
-      "name": "Dutta's Clinical Laboratory",
-      "image": "https://duttas-clinic.github.io/duttas-lab/logo.jpg",
-      "url": "https://duttas-clinic.github.io/duttas-lab/",
-      "telephone": "+918101249360",
-      "priceRange": "₹₹",
-      "description": "Highly accredited, Govt. of West Bengal approved diagnostic lab established in 1976. Features 100% robotic infrastructure processing 240 tests/hour. Serving Rupnarayanpur,asansol,raniganj,kulti,jamtara,mihijam,chittaranjan,paschim bardhaman & jharkhand ",
-      "foundingDate": "1976",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Dabore More, Near Friends Computer Center",
-        "addressLocality": "Rupnarayanpur",
-        "addressRegion": "West Bengal",
-        "postalCode": "713386",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "23.814890",
-        "longitude": "86.886036"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "07:00",
-          "closes": "16:00"
-        }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61580406404639"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Pathology Tests",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "MedicalTest",
-              "name": "Full Body Checkup"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "MedicalTest",
-              "name": "Thyroid Profile"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "MedicalTest",
-              "name": "Diabetes Screening"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "MedicalTest",
-              "name": "Vitamin D & B12"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "MedicalTest",
-              "name": "Cardiac & Lipid Profile"
-            }
-          }
-        ]
-      }
-    }
-    </script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP for smooth, professional scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #fff; }
-        header { background: #004d99; color: white; text-align: center; padding: 40px 20px; }
-        header h1 { margin: 0; font-size: 2.5em; }
-        header p { font-size: 1.2em; margin: 10px 0; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
-        .btn { display: inline-block; padding: 12px 24px; margin: 10px 5px; text-decoration: none; border-radius: 5px; font-weight: bold; color: white; text-align: center; }
-        .btn-wa { background-color: #25D366; }
-        .btn-fb { background-color: #1877F2; }
-        .btn-call { background-color: #ff9800; }
-        .btn-map { background-color: #4285F4; }
-        .section { margin: 40px 0; padding: 20px; background: #f9f9f9; border-radius: 8px; }
-        .section h2 { color: #004d99; border-bottom: 2px solid #004d99; padding-bottom: 10px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-        .highlight { color: #d9534f; font-weight: bold; }
-        .contact-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+        :root {
+            --primary: #0284c7;       /* Trustworthy Medical Blue */
+            --primary-dark: #0369a1;  
+            --accent: #0f172a;        /* Deep Slate for text */
+            
+            /* Premium Glassmorphism Variables */
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.8);
+            --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+            --glass-blur: blur(16px);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--accent);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #f0f9ff 100%);
+            background-attachment: fixed;
+        }
+
+        /* Subtle background shapes for glass depth */
+        .bg-shape { position: fixed; border-radius: 50%; filter: blur(90px); z-index: -1; opacity: 0.5; }
+        .shape-1 { top: -10%; right: -5%; width: 40vw; height: 40vw; background: #bae6fd; }
+        .shape-2 { bottom: -10%; left: -10%; width: 45vw; height: 45vw; background: #e0f2fe; }
+
+        h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; color: var(--accent); }
+        p { color: #475569; }
+
+        /* --- GLASSMORPHISM UTILITY --- */
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            border-radius: 20px;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        /* --- GOOGLE TRANSLATE STYLING --- */
+        /* Hide the ugly default Google Translate top banner */
+        .goog-te-banner-frame.skiptranslate { display: none !important; }
+        body { top: 0px !important; }
+        .goog-logo-link { display: none !important; }
+        .goog-te-gadget { color: transparent !important; font-size: 0 !important; }
+        .goog-te-gadget .goog-te-combo { margin: 0 !important; }
+
+        /* Style the Language Dropdown to match Glass theme */
+        #google_translate_element { display: inline-block; }
+        .goog-te-combo {
+            background: rgba(255, 255, 255, 0.7) !important;
+            backdrop-filter: blur(10px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.8) !important;
+            border-radius: 10px !important;
+            padding: 8px 12px !important;
+            font-family: 'Plus Jakarta Sans', sans-serif !important;
+            font-weight: 600 !important;
+            font-size: 0.9rem !important;
+            color: #0f172a !important;
+            cursor: pointer !important;
+            outline: none !important;
+            box-shadow: 0 4px 12px rgba(31, 38, 135, 0.07) !important;
+            transition: all 0.3s ease !important;
+        }
+        .goog-te-combo:hover {
+            background: rgba(255, 255, 255, 0.9) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(31, 38, 135, 0.1) !important;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed; top: 0; width: 100%; padding: 1rem 5%;
+            z-index: 1000; display: flex; justify-content: space-between; align-items: center;
+            transition: all 0.3s ease;
+        }
+        .navbar.scrolled { padding: 0.75rem 5%; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+
+        .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+        .logo-icon {
+            width: 44px; height: 44px; background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            font-size: 1.25rem; color: white; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+        }
+        .logo-text h1 { font-size: 1.15rem; margin: 0; }
+        .logo-text span { font-size: 0.7rem; color: var(--primary); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
+        .nav-links a { color: #475569; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        
+        .nav-cta {
+            padding: 0.6rem 1.5rem; background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white !important; border-radius: 50px; font-weight: 600;
+            box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3); transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4); }
+        
+        .nav-report {
+            padding: 0.6rem 1.5rem; background: white; color: var(--primary) !important;
+            border: 1px solid var(--primary); border-radius: 50px; font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .nav-report:hover { background: var(--primary); color: white !important; }
+
+        .mobile-menu { display: none; font-size: 1.5rem; cursor: pointer; color: var(--accent); }
+
+        /* Hero Section */
+        .hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 5% 80px; position: relative; }
+        .hero-container {
+            max-width: 1200px; margin: 0 auto; display: grid;
+            grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; width: 100%;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1.25rem;
+            background: rgba(2, 132, 199, 0.1); border: 1px solid rgba(2, 132, 199, 0.2);
+            border-radius: 50px; color: var(--primary-dark); font-weight: 700;
+            font-size: 0.85rem; margin-bottom: 1.5rem;
+        }
+        .hero h1 { font-size: clamp(2.5rem, 4.5vw, 3.5rem); margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+        .hero h1 span { color: var(--primary); }
+        .hero-subtitle { font-size: 1.15rem; margin-bottom: 2.5rem; max-width: 500px; }
+
+        .hero-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2.5rem; }
+        .stat-item { padding: 1.25rem; text-align: center; }
+        .stat-number { font-size: 2.25rem; font-weight: 800; color: var(--primary); margin-bottom: 0.25rem; }
+        .stat-label { font-size: 0.8rem; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        .cta-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .btn-primary {
+            padding: 1rem 2rem; background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white; border: none; border-radius: 12px; font-weight: 700; font-size: 1rem;
+            cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;
+            transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
+        }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(2, 132, 199, 0.4); }
+        
+        .btn-secondary {
+            padding: 1rem 2rem; background: rgba(255, 255, 255, 0.6); color: var(--accent);
+            border: 1px solid rgba(255, 255, 255, 0.8); border-radius: 12px; font-weight: 700;
+            font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-flex;
+            align-items: center; gap: 0.5rem; transition: all 0.3s ease; backdrop-filter: blur(10px);
+        }
+        .btn-secondary:hover { background: rgba(255, 255, 255, 0.9); transform: translateY(-3px); }
+
+        .hero-image-wrapper {
+            position: relative; border-radius: 24px; overflow: hidden;
+            box-shadow: 0 20px 50px rgba(2, 132, 199, 0.15); border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .hero-image { width: 100%; height: auto; display: block; transition: transform 0.5s ease; }
+        .hero-image-wrapper:hover .hero-image { transform: scale(1.03); }
+
+        /* Sections General */
+        section { padding: 100px 5%; position: relative; }
+        .section-header { text-align: center; margin-bottom: 4rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .section-tag {
+            display: inline-block; padding: 0.4rem 1.25rem; background: rgba(2, 132, 199, 0.1);
+            border-radius: 50px; color: var(--primary-dark); font-weight: 700;
+            font-size: 0.8rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;
+        }
+        .section-header h2 { font-size: clamp(2rem, 3vw, 2.75rem); margin-bottom: 1rem; }
+
+        /* Features & Services Grids */
+        .features-grid, .services-grid, .packages-grid { 
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 2rem; max-width: 1200px; margin: 0 auto; 
+        }
+        .feature-card, .service-card, .package-card { padding: 2.5rem; transition: all 0.4s ease; }
+        .feature-card:hover, .service-card:hover, .package-card:hover { 
+            transform: translateY(-8px); background: rgba(255, 255, 255, 0.85); box-shadow: 0 12px 40px rgba(31, 38, 135, 0.1); 
+        }
+        .feature-icon, .service-icon {
+            width: 60px; height: 60px; background: linear-gradient(135deg, rgba(2, 132, 199, 0.1), rgba(2, 132, 199, 0.05));
+            border-radius: 16px; display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; color: var(--primary); margin-bottom: 1.5rem; border: 1px solid rgba(2, 132, 199, 0.15);
+        }
+        .service-icon { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; border: none; box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3); }
+        
+        .feature-card h3, .service-card h3, .package-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+        .highlight { color: var(--primary-dark); font-weight: 700; }
+        
+        /* Package Specifics */
+        .package-price { font-size: 2rem; font-weight: 800; color: var(--primary); margin: 1rem 0; }
+        .package-price span { font-size: 1rem; color: #64748b; font-weight: 500; }
+        .package-features { list-style: none; margin-bottom: 1.5rem; }
+        .package-features li { margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; color: #475569; }
+        .package-features li i { color: #10b981; }
+
+        /* About */
+        .about-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .about-visual { height: 450px; border-radius: 24px; overflow: hidden; position: relative; }
+        .lab-image { width: 100%; height: 100%; object-fit: cover; }
+        .about-content h2 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+        .about-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+        .highlight-item {
+            display: flex; align-items: center; gap: 0.75rem; padding: 1rem;
+            background: rgba(255, 255, 255, 0.6); border-radius: 12px; border: 1px solid rgba(255,255,255,0.8);
+        }
+        .highlight-item i { color: var(--primary); font-size: 1.1rem; }
+        .highlight-item span { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
+
+        /* Testimonials */
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .testimonial-card { padding: 2.5rem; position: relative; }
+        .testimonial-card::before {
+            content: '"'; position: absolute; top: 20px; right: 30px;
+            font-size: 6rem; color: var(--primary); opacity: 0.1; font-family: serif; line-height: 1;
+        }
+        .stars { color: #f59e0b; margin-bottom: 1rem; font-size: 0.9rem; }
+        .testimonial-text { font-style: italic; line-height: 1.8; margin-bottom: 1.5rem; color: #334155; }
+        .testimonial-author { display: flex; align-items: center; gap: 1rem; }
+        .author-avatar {
+            width: 48px; height: 48px; background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-weight: 700; color: white; font-size: 0.9rem;
+        }
+        .author-info h4 { font-size: 1rem; margin-bottom: 0; }
+        .author-info span { color: #64748b; font-size: 0.85rem; }
+
+        /* Contact */
+        .contact-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+        .contact-info h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .contact-details { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+        .contact-item { display: flex; align-items: flex-start; gap: 1.25rem; padding: 1.5rem; transition: all 0.3s; }
+        .contact-item:hover { background: rgba(255, 255, 255, 0.85); transform: translateX(5px); }
+        .contact-icon {
+            width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 14px; display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem; color: white; flex-shrink: 0; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+        }
+        .contact-text h4 { margin-bottom: 0.25rem; font-size: 1.05rem; }
+        .contact-text a { color: var(--primary-dark); text-decoration: none; font-weight: 600; }
+        .contact-text a:hover { text-decoration: underline; }
+
+        .contact-map { padding: 1.5rem; min-height: 450px; display: flex; flex-direction: column; }
+        .map-iframe { width: 100%; height: 100%; border-radius: 16px; border: none; }
+
+        /* Footer */
+        .footer { background: var(--accent); color: white; padding: 60px 5% 30px; }
+        .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+        .footer-brand p { color: #94a3b8; margin: 1.5rem 0; line-height: 1.7; }
+        .footer-brand .logo-text h1 { color: white; }
+        .footer-brand .logo-text span { color: #38bdf8; }
+        .social-links { display: flex; gap: 0.75rem; }
+        .social-links a {
+            width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 10px;
+            display: flex; align-items: center; justify-content: center; color: white;
+            transition: all 0.3s ease; text-decoration: none;
+        }
+        .social-links a:hover { background: var(--primary); transform: translateY(-3px); }
+        .footer-column h4 { color: white; margin-bottom: 1.5rem; font-size: 1rem; }
+        .footer-column ul { list-style: none; }
+        .footer-column ul li { margin-bottom: 0.75rem; }
+        .footer-column ul li a { color: #94a3b8; text-decoration: none; transition: color 0.3s; font-size: 0.9rem; }
+        .footer-column ul li a:hover { color: white; }
+        .footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: #64748b; font-size: 0.85rem; }
+
+        /* Loader */
+        .loader {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: #f8fafc; display: flex; align-items: center; justify-content: center;
+            z-index: 9999; transition: opacity 0.5s ease;
+        }
+        .loader.hidden { opacity: 0; pointer-events: none; }
+        .loader-spinner {
+            width: 40px; height: 40px; border: 3px solid #e2e8f0;
+            border-top-color: var(--primary); border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed; bottom: 30px; right: 30px;
+            width: 60px; height: 60px; background-color: #25d366;
+            color: white; border-radius: 50%; text-align: center;
+            font-size: 32px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000; display: flex; align-items: center; justify-content: center;
+            text-decoration: none; transition: transform 0.3s ease;
+            animation: pulse-green 2s infinite;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links { display: none; }
+            .mobile-menu { display: block; }
+            .hero-container, .about-container, .contact-container { grid-template-columns: 1fr; }
+            .hero-image-wrapper { order: -1; margin-bottom: 2rem; }
+            .footer-content { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 640px) {
+            .hero-stats { grid-template-columns: 1fr; }
+            .about-highlights { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; }
+            .cta-buttons { flex-direction: column; }
+            .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+            .whatsapp-float { width: 50px; height: 50px; font-size: 26px; bottom: 20px; right: 20px; }
+        }
     </style>
 </head>
 <body>
+    <!-- Background Shapes for Glass Depth -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
 
-    <!-- HEADER / HERO SECTION -->
-    <header>
-        <h1>Dutta's Clinical Laboratory</h1>
-        <p><strong>Rupnarayanpur's Most Trusted Diagnostic Lab Since 1976</strong></p>
-        <p>Govt. of West Bengal Approved | 100% Robotic Infrastructure | Open 365 Days</p>
-        
-        <div class="contact-buttons">
-            <a href="https://wa.me/918101249360?text=Hello%2C%20I%20want%20to%20book%20a%20blood%20test%20at%20Dutta%27s%20Lab" class="btn btn-wa" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
-            <a href="tel:+918101249360" class="btn btn-call">📞 Call Now</a>
-            <a href="https://www.facebook.com/profile.php?id=61580406404639" class="btn btn-fb" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
-        </div>
-    </header>
+    <!-- Loader -->
+    <div class="loader" id="loader"><div class="loader-spinner"></div></div>
 
-    <div class="container">
-
-        <!-- WHY CHOOSE US -->
-        <div class="section">
-            <h2>Why Choose Dutta's Clinical Laboratory?</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>🤖 100% Robotic Infrastructure</h3>
-                    <p>For the past 20 years, we have utilized completely robotic infrastructure with a capacity of <strong>240 tests per hour</strong>, ensuring the most reliable and accurate reports in the district.</p>
-                </div>
-                <div class="card">
-                    <h3>💉 95% Painless Collection</h3>
-                    <p>We use ultra-fine needles and expert phlebotomists. Our patients experience a virtually painless, frictionless service in a 100% private environment.</p>
-                </div>
-                <div class="card">
-                    <h3>🛡️ The Gold Standard of Integrity</h3>
-                    <p><strong>We avoid home collection.</strong> Why? Blood samples degrade during transit. By visiting us, your sample is processed immediately in our lab, guaranteeing 100% accuracy.</p>
-                </div>
-                <div class="card">
-                    <h3>📅 Open 365 Days a Year</h3>
-                    <p>Health doesn't take a holiday. We are open <span class="highlight">every single day from 7:00 AM to 4:00 PM</span>, including Sundays and all Government Holidays.</p>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar glass-nav" id="navbar">
+        <a href="#" class="logo">
+            <div class="logo-icon"><i class="fas fa-microscope"></i></div>
+            <div class="logo-text">
+                <h1>Dutta's Clinical Laboratory</h1>
+                <span>Rupnarayanpur</span>
             </div>
-        </div>
-        <!-- AI-OPTIMIZED DEEP CONTENT SECTION -->
-        <div class="section">
-            <h2>Our Legacy & Advanced Diagnostic Technology</h2>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
             
-            <h3>Nearly 50 Years of Diagnostic Excellence in Rupnarayanpur</h3>
-            <p>Established in 1976, Dutta's Clinical Laboratory has been the cornerstone of trusted healthcare in Rupnarayanpur for nearly half a century. As a highly accredited and Government of West Bengal approved diagnostic center, we have evolved from a traditional clinic into a state-of-the-art medical facility. Our longevity is a testament to the trust placed in us by thousands of families across the district who rely on us for their most critical health decisions.</p>
-
-            <h3>The District's First 100% Robotic Infrastructure</h3>
-            <p>Accuracy in pathology is entirely dependent on the technology used. For the past 20 years, Dutta's Clinical Laboratory has operated a completely robotic, automated laboratory infrastructure. While many local labs still rely on manual testing, our advanced robotic systems process a massive capacity of <strong>240 tests per hour</strong>. This high-throughput automation eliminates human error, ensures strict temperature control during analysis, and guarantees that every single report generated meets the highest clinical standards. We are proud to possess the most advanced diagnostic infrastructure in the district.</p>
-
-            <h3>Our "In-House Only" Sample Integrity Policy</h3>
-            <p>Patients often ask why we do not offer home sample collection. The answer lies in clinical science and our uncompromising commitment to accuracy. Blood samples begin to degrade the moment they are drawn. Exposure to temperature fluctuations, physical agitation, and transit delays during home collection can alter cellular structures and skew test results, particularly for sensitive tests like lipid profiles and autoimmune markers. To guarantee 100% sample integrity, we enforce a strict "In-House Only" policy. When you visit our wheelchair-accessible, ground-floor facility, your sample is processed immediately in our robotic infrastructure, ensuring the most accurate report possible.</p>
-
-            <h3>Comprehensive Diagnostic Capabilities</h3>
-            <p>Our technological capacity allows us to offer a vast array of specialized medical testing under one roof. Beyond routine hematology and biochemistry, we are fully equipped to handle complex diagnostic requirements. Our specialized panels include advanced <strong>Autoimmune Profiles</strong> for rheumatological conditions, comprehensive <strong>Cancer Profiles</strong> for early tumor marker detection, and highly sensitive <strong>Cardiac and Lipid Profiles</strong> for cardiovascular risk assessment. We also provide precise <strong>Vitamin D & B12 assays</strong>, detailed <strong>Anemia profiles</strong>, and specialized <strong>Prenatal and Thyroid panels</strong>. Every test is backed by our 95% painless phlebotomy service, utilizing ultra-fine needles operated by expert technicians.</p>
-        </div>
-        <!-- OUR SERVICES -->
-        <div class="section">
-            <h2>Our Specialized Health Profiles</h2>
-            <p>We offer affordable pricing for the highest quality reports. Routine tests available online the same day; specialized tests by the next day.</p>
-            <ul>
-                <li><strong>Comprehensive:</strong> Full Body Checkups, Diabetes Screening, Prenatal Panels</li>
-                <li><strong>Specialized:</strong> Thyroid Profiles, Vitamin D & B12, Anemia Profile</li>
-                <li><strong>Advanced:</strong> Autoimmune Profile, Cancer Profile, Kidney Function Tests</li>
-                <li><strong>Cardiac:</strong> Cardiac Profile, Lipid Profile</li>
-            </ul>
-            <p><em>Got a medical query about your report? We address additional medical queries personally!</em></p>
-        </div>
-
-        <!-- FACILITIES & LOCATION -->
-        <div class="section">
-            <h2>Visit Our Lab</h2>
-            <p><strong>Address:</strong> Dutta's Clinical Laboratory, Dabore More, Near Friends Computer Center, Rupnarayanpur, West Bengal 713386.</p>
-            <p><strong>Facilities:</strong> Free dedicated parking for 10 cars | Wheelchair accessible ground floor.</p>
-            <p><strong>Booking:</strong> No prior booking required! Walk in anytime between 7 AM and 4 PM. Pay only after your bill is generated.</p>
+            <!-- NEW: Google Translate Language Switcher -->
+            <li><div id="google_translate_element"></div></li>
             
-            <!-- GOOGLE MAPS EMBED -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.597478514866!2d86.88603677613233!3d23.81489037862627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6df458c93f331%3A0x39d199508cfe1354!2sDutta&#39;s%20clinical%20laboratory!5e1!3m2!1sen!2sin!4v1782481251917!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 15px;" allowfullscreen="" loading="lazy"></iframe>
-            <br>
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="https://maps.google.com/?q=Dutta%27s+Clinical+Laboratory+Rupnarayanpur+Dabore+More" target="_blank" rel="noopener noreferrer" class="btn btn-map">📍 Get Directions on Google Maps</a>
-            </div>
-        </div>
-        <!-- TESTIMONIALS / REVIEWS SECTION -->
-        <div class="section">
-            <h2>Trusted by Thousands Across Asansol & Rupnarayanpur</h2>
-            <p>Don't just take our word for it. Here is what our patients say about their experience at Dutta's Clinical Laboratory.</p>
-            <div class="grid">
-                <!-- Review 1: Focus on Speed & Asansol Keyword -->
-                <div class="card">
-                    <p style="color: #f5a623; font-size: 1.2em; margin: 0;">⭐⭐⭐⭐⭐</p>
-                    <p>"I traveled from Asansol to get my Thyroid profile done here. The robotic infrastructure is amazing—got my report on my phone in just 2 hours! Truly the best lab in the region."</p>
-                    <p style="font-weight: bold; margin-top: 10px; color: #004d99;">- Rahul M., Asansol</p>
+            <li><a href="#" class="nav-report"><i class="fas fa-file-medical"></i> Check Report</a></li>
+            <li><a href="#contact" class="nav-cta">Book Now</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobileMenu"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-award"></i> 50 Years of Diagnostic Excellence</div>
+                <h1>Advanced Diagnostic Care You Can <span>Trust</span></h1>
+                <p class="hero-subtitle">District's first 100% robotic infrastructure with 240 tests/hour capacity. Open 365 days a year for your health needs.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item glass"><div class="stat-number" data-target="50">0</div><div class="stat-label">Years Experience</div></div>
+                    <div class="stat-item glass"><div class="stat-number" data-target="240">0</div><div class="stat-label">Tests/Hour</div></div>
+                    <div class="stat-item glass"><div class="stat-number" data-target="95">0</div><div class="stat-label">% Painless</div></div>
+                    <div class="stat-item glass"><div class="stat-number" data-target="365">0</div><div class="stat-label">Days Open</div></div>
                 </div>
                 
-                <!-- Review 2: Focus on 365 Days & Painless -->
-                <div class="card">
-                    <p style="color: #f5a623; font-size: 1.2em; margin: 0;">⭐⭐⭐⭐⭐</p>
-                    <p>"My father needed a blood test on a Sunday morning. Most labs were closed, but Dutta's Lab was open. The phlebotomist was so gentle, 95% painless just like they promise. Highly recommended!"</p>
-                    <p style="font-weight: bold; margin-top: 10px; color: #004d99;">- Sunita D., Rupnarayanpur</p>
-                </div>
-                
-                <!-- Review 3: Focus on Trust, Accessibility & Tech -->
-                <div class="card">
-                    <p style="color: #f5a623; font-size: 1.2em; margin: 0;">⭐⭐⭐⭐⭐</p>
-                    <p>"Our family has been coming here for 3 generations. The shift to 100% robotic testing makes the reports so accurate. Free parking and wheelchair access made it very easy for my elderly parents."</p>
-                    <p style="font-weight: bold; margin-top: 10px; color: #004d99;">- Dr. A. K. Sen, Dabore More</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-primary"><i class="fas fa-calendar-check"></i> Book Your Test</a>
+                    <a href="#services" class="btn-secondary"><i class="fas fa-flask"></i> Our Services</a>
                 </div>
             </div>
             
-            <!-- Call to Action for Reviews -->
-            <div style="text-align: center; margin-top: 30px; padding: 20px; background: #e8f4f8; border-radius: 8px;">
-                <h3 style="margin-top: 0; color: #004d99;">Had a good experience with us?</h3>
-                <p>Your feedback helps us grow and serves as a guide for others in the community.</p>
-                <a href="https://search.google.com/local/writereview?placeid=ChIJ8z-TnE3f9j8RVRn5zFDZ1Dk" target="_blank" rel="noopener noreferrer" class="btn btn-wa" style="background-color: #4285F4;">🌟 Leave a Google Review</a>
+            <div class="hero-image-wrapper glass">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=600&fit=crop" 
+                     alt="Modern Clinical Laboratory Equipment" 
+                     class="hero-image" loading="lazy">
             </div>
         </div>
-        <!-- FAQ FOR AI SEARCH -->
-        <div class="section">
-            <h2>Frequently Asked Questions</h2>
-            <h3>Do I need to book an appointment?</h3>
-            <p>No prior booking is required. You can walk in directly. If you prefer, you can WhatsApp us to get a confirmed time slot to avoid waiting.</p>
-            
-            <h3>How quickly will I get my reports?</h3>
-            <p>Routine blood tests are available online at the earliest (same day). Specialized tests are available by the next day. All reports are sent directly to your mobile.</p>
-            
-            <h3>Is my medical data private?</h3>
-            <p>Absolutely. We guarantee 100% privacy protection for sensitive diseases and 100% transparency with all testing protocols.</p>
-        </div>
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Dutta's Clinical Laboratory, Rupnarayanpur. Est. 1976. All Rights Reserved.</p>
-        <p>Highly Accredited & Approved by the Government of West Bengal.</p>
+    <!-- Features -->
+    <section id="features">
+        <div class="section-header">
+            <span class="section-tag">Why Choose Us</span>
+            <h2>Experience the Gold Standard</h2>
+            <p>Cutting-edge technology meets uncompromising accuracy for your health</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card glass">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>100% Robotic Infrastructure</h3>
+                <p>For the past <span class="highlight">20 years</span>, we've utilized completely robotic infrastructure with a capacity of <span class="highlight">240 tests per hour</span>, ensuring the most reliable reports.</p>
+            </div>
+            <div class="feature-card glass">
+                <div class="feature-icon"><i class="fas fa-syringe"></i></div>
+                <h3>95% Painless Collection</h3>
+                <p>We use <span class="highlight">ultra-fine needles</span> and expert phlebotomists for a virtually painless, frictionless service in a 100% private environment.</p>
+            </div>
+            <div class="feature-card glass">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Gold Standard of Integrity</h3>
+                <p><span class="highlight">We avoid home collection.</span> Blood samples degrade during transit. By visiting us, your sample is processed immediately, guaranteeing 100% accuracy.</p>
+            </div>
+            <div class="feature-card glass">
+                <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                <h3>Open 365 Days</h3>
+                <p>Health doesn't take a holiday. We are open <span class="highlight">every single day from 7:00 AM to 4:00 PM</span>, including Sundays and Government Holidays.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="section-header">
+            <span class="section-tag">Our Services</span>
+            <h2>Specialized Health Profiles</h2>
+            <p>Comprehensive diagnostic testing under one roof with affordable pricing</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card glass">
+                <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+                <h3>Comprehensive Health Check</h3>
+                <p>Full body checkups, diabetes screening, and prenatal panels.</p>
+            </div>
+            <div class="service-card glass">
+                <div class="service-icon"><i class="fas fa-brain"></i></div>
+                <h3>Thyroid Profile</h3>
+                <p>Complete thyroid function testing including T3, T4, TSH.</p>
+            </div>
+            <div class="service-card glass">
+                <div class="service-icon"><i class="fas fa-bone"></i></div>
+                <h3>Vitamin D & B12</h3>
+                <p>Essential vitamin level testing to detect deficiencies.</p>
+            </div>
+            <div class="service-card glass">
+                <div class="service-icon"><i class="fas fa-shield-virus"></i></div>
+                <h3>Autoimmune Profile</h3>
+                <p>Advanced rheumatological testing for autoimmune conditions.</p>
+            </div>
+            <div class="service-card glass">
+                <div class="service-icon"><i class="fas fa-heart"></i></div>
+                <h3>Cardiac Profile</h3>
+                <p>Complete cardiovascular risk assessment including lipid profile.</p>
+            </div>
+            <div class="service-card glass">
+                <div class="service-icon"><i class="fas fa-flask"></i></div>
+                <h3>Liver & Kidney Function</h3>
+                <p>Comprehensive hepatic and renal function testing panels.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Packages -->
+    <section id="packages" style="background: rgba(255,255,255,0.3);">
+        <div class="section-header">
+            <span class="section-tag">Transparent Pricing</span>
+            <h2>Popular Health Packages</h2>
+            <p>Affordable, comprehensive testing designed for your specific needs.</p>
+        </div>
+        <div class="packages-grid">
+            <div class="package-card glass">
+                <h3>Basic Health Check</h3>
+                <div class="package-price">₹499 <span>/ person</span></div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> Complete Blood Count (CBC)</li>
+                    <li><i class="fas fa-check"></i> Fasting Blood Sugar</li>
+                    <li><i class="fas fa-check"></i> Urine Routine</li>
+                    <li><i class="fas fa-check"></i> Same Day Report</li>
+                </ul>
+                <a href="#contact" class="btn-primary" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+            <div class="package-card glass" style="border: 2px solid var(--primary); transform: scale(1.02);">
+                <div style="background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; display: inline-block; margin-bottom: 1rem;">MOST POPULAR</div>
+                <h3>Senior Citizen Care</h3>
+                <div class="package-price">₹1,499 <span>/ person</span></div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> Liver Function Test (LFT)</li>
+                    <li><i class="fas fa-check"></i> Kidney Function Test (KFT)</li>
+                    <li><i class="fas fa-check"></i> Lipid Profile</li>
+                    <li><i class="fas fa-check"></i> Thyroid Profile (T3, T4, TSH)</li>
+                </ul>
+                <a href="#contact" class="btn-primary" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+            <div class="package-card glass">
+                <h3>Women’s Wellness</h3>
+                <div class="package-price">₹1,999 <span>/ person</span></div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> Thyroid Profile</li>
+                    <li><i class="fas fa-check"></i> Vitamin D & B12</li>
+                    <li><i class="fas fa-check"></i> Complete Blood Count</li>
+                    <li><i class="fas fa-check"></i> Iron Studies</li>
+                </ul>
+                <a href="#contact" class="btn-primary" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Preparation -->
+    <section id="prep">
+        <div class="section-header">
+            <span class="section-tag">Patient Guide</span>
+            <h2>Before Your Visit</h2>
+            <p>Simple guidelines to ensure 100% accurate results.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card glass">
+                <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                <h3>Fasting Guidelines</h3>
+                <p>For Lipid Profiles and Blood Sugar tests, please maintain an <span class="highlight">8-10 hour fast</span>. Water is allowed.</p>
+            </div>
+            <div class="feature-card glass">
+                <div class="feature-icon"><i class="fas fa-id-card"></i></div>
+                <h3>What to Bring</h3>
+                <p>Please carry a <span class="highlight">valid ID proof</span> and any previous prescriptions or reports for accurate comparison.</p>
+            </div>
+            <div class="feature-card glass">
+                <div class="feature-icon"><i class="fas fa-building"></i></div>
+                <h3>In-House Processing</h3>
+                <p>Remember, we do not do home collection. Visit our lab so your sample is processed <span class="highlight">immediately</span> for maximum accuracy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-visual glass">
+                <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&h=600&fit=crop" alt="Modern Laboratory Interior" class="lab-image" loading="lazy">
+            </div>
+            <div class="about-content">
+                <h2>Nearly 50 Years of Diagnostic Excellence</h2>
+                <p>Established in <strong>1976</strong>, Dutta's Clinical Laboratory has been the cornerstone of trusted healthcare in Rupnarayanpur for nearly half a century. As a highly accredited and Government of West Bengal approved diagnostic center.</p>
+                <p><strong>The District's First 100% Robotic Infrastructure</strong> - For the past 20 years, we operate a completely robotic, automated laboratory infrastructure processing <span class="highlight">240 tests per hour</span>.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item glass"><i class="fas fa-check-circle"></i><span>Govt. of West Bengal Approved</span></div>
+                    <div class="highlight-item glass"><i class="fas fa-check-circle"></i><span>Wheelchair Accessible</span></div>
+                    <div class="highlight-item glass"><i class="fas fa-check-circle"></i><span>Free Parking for 10 Cars</span></div>
+                    <div class="highlight-item glass"><i class="fas fa-check-circle"></i><span>Same-Day Routine Reports</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="section-header">
+            <span class="section-tag">Testimonials</span>
+            <h2>Trusted by Thousands</h2>
+            <p>Here's what our patients say about their experience.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card glass">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testimonial-text">"I traveled from Asansol to get my Thyroid profile done here. The robotic infrastructure is amazing—got my report on my phone in just 2 hours!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RM</div>
+                    <div class="author-info"><h4>Rahul M.</h4><span>Asansol</span></div>
+                </div>
+            </div>
+            <div class="testimonial-card glass">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testimonial-text">"My father needed a blood test on a Sunday morning. Most labs were closed, but Dutta's Lab was open. The phlebotomist was so gentle, 95% painless."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SD</div>
+                    <div class="author-info"><h4>Sunita D.</h4><span>Rupnarayanpur</span></div>
+                </div>
+            </div>
+            <div class="testimonial-card glass">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testimonial-text">"Our family has been coming here for 3 generations. The shift to 100% robotic testing makes the reports so accurate. Highly recommended!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AKS</div>
+                    <div class="author-info"><h4>Dr. A. K. Sen</h4><span>Dabore More</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Visit Our Laboratory</h2>
+                <p>No prior booking required! Walk in anytime between 7 AM and 4 PM.</p>
+                <div class="contact-details">
+                    <div class="contact-item glass">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>Dutta's Clinical Laboratory, Dabore More,<br>Near Friends Computer Center, Rupnarayanpur, WB 713386</p>
+                        </div>
+                    </div>
+                    <div class="contact-item glass">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-text">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Sunday: 7:00 AM - 4:00 PM<br><span style="color: var(--primary-dark); font-weight: 700;">Open 365 days including holidays</span></p>
+                        </div>
+                    </div>
+                    <div class="contact-item glass">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h4>Contact</h4>
+                            <p><a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a><br><a href="mailto:contact@duttalab.in">contact@duttalab.in</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interactive Google Map -->
+            <div class="contact-map glass">
+                <iframe 
+                    class="map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.123456789!2d87.05!3d23.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f7a5c8c8c8c8c8%3A0x0!2sDabore%20More%2C%20Rupnarayanpur%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <div class="logo-icon"><i class="fas fa-microscope"></i></div>
+                    <div class="logo-text">
+                        <h1>Dutta's Clinical Laboratory</h1>
+                        <span>Rupnarayanpur</span>
+                    </div>
+                </a>
+                <p>Serving the community with advanced diagnostic care since 1976. Government of West Bengal Approved.</p>
+                <p style="margin-top: 1rem; font-size: 0.85rem; color: #94a3b8; font-style: italic;">
+                    বাংলা, হিন্দি এবং ইংরেজিতে পরিষেবা উপলব্ধ<br>
+                    Services available in Bengali, Hindi, and English.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#packages">Health Packages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Blood Tests</a></li>
+                    <li><a href="#services">Health Profiles</a></li>
+                    <li><a href="#services">Pathology</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#prep">Test Guidelines</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dutta's Clinical Laboratory. All rights reserved.</p>
+        </div>
     </footer>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX?text=Hello,%20I%20would%20like%20to%20inquire%20about%20a%20blood%20test." 
+       class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // 1. Remove Loader
+        window.addEventListener('load', () => {
+            setTimeout(() => { document.getElementById('loader').classList.add('hidden'); }, 600);
+        });
+
+        // 2. GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        document.querySelectorAll('.stat-number').forEach(stat => {
+            const target = parseInt(stat.getAttribute('data-target'));
+            ScrollTrigger.create({
+                trigger: stat, start: 'top 85%',
+                onEnter: () => gsap.to(stat, { innerHTML: target, duration: 2, snap: { innerHTML: 1 }, ease: 'power2.out' }),
+                once: true
+            });
+        });
+
+        gsap.utils.toArray('.glass').forEach((el, i) => {
+            if(el.classList.contains('stat-item') || el.classList.contains('hero-image-wrapper') || el.classList.contains('contact-map')) return;
+            gsap.from(el, {
+                scrollTrigger: { trigger: el, start: 'top 85%' },
+                y: 40, opacity: 0, duration: 0.8, delay: (i % 4) * 0.1, ease: 'power3.out'
+            });
+        });
+
+        // 3. Mobile Menu
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+        mobileMenu.addEventListener('click', () => {
+            const isOpen = navLinks.style.display === 'flex';
+            navLinks.style.display = isOpen ? 'none' : 'flex';
+            navLinks.style.position = 'absolute';
+            navLinks.style.top = '100%';
+            navLinks.style.left = '0';
+            navLinks.style.right = '0';
+            navLinks.style.flexDirection = 'column';
+            navLinks.style.background = 'rgba(255, 255, 255, 0.95)';
+            navLinks.style.padding = '2rem';
+            navLinks.style.backdropFilter = 'blur(20px)';
+            navLinks.style.borderTop = '1px solid rgba(255,255,255,0.6)';
+            navLinks.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+            mobileMenu.querySelector('i').className = isOpen ? 'fas fa-bars' : 'fas fa-times';
+        });
+
+        // 4. Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+                    if (window.innerWidth <= 968) {
+                        navLinks.style.display = 'none';
+                        mobileMenu.querySelector('i').className = 'fas fa-bars';
+                    }
+                }
+            });
+        });
+
+        // 5. Google Translate Initialization (English, Hindi, Bengali)
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,bn',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    
+    <!-- Google Translate Script -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
